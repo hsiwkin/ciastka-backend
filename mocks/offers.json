@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "imageUrl": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+    "title": "Ciastka porzeczkowe",
+    "description": "Połączenie porzeczek i pulchnego ciasta",
+    "extendedDescription": "Klasyczne ciasto drożdżowe zwijane z masą z orzechów włoskich, białego maku i marmolady różanej.",
+    "updatedAt": "03.01.2020",
+    "location": [52.233134, 20.998249]
+  },
+  {
+    "id": 2,
+    "imageUrl": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+    "title": "Ciastka bananowe",
+    "description": "Połączenie porzeczek i pulchnego ciasta",
+    "extendedDescription": "Tarta na maślanym kakaowym spodzie wyłożonym własnej produkcji prażonymi malinami, wypełniona ganache z czekolady ciemnej. Dekorowana czekoladkami i obsypana czekoladową posypką.",
+    "updatedAt": "02.01.2020",
+    "location": [52.261734, 21.002889]
+  },
+  {
+    "id": 3,
+    "imageUrl": "https://images.unsplash.com/photo-1532499016263-f2c3e89de9cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+    "title": "Ciastka wiśniowe",
+    "description": "Połączenie porzeczek i pulchnego ciasta",
+    "extendedDescription": "Sernik na bazie twarogu, wyjątkowego smaku nadaje toffi. Bogato dekorowany orzechami włoskimi w karmelu.",
+    "updatedAt": "01.01.2020",
+    "location": [52.243336, 21.051277]
+  },
+  {
+    "id": 4,
+    "imageUrl": "https://images.unsplash.com/photo-1475856033578-76b4a228f5c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+    "title": "Ciastka ananasowe",
+    "description": "Połączenie porzeczek i pulchnego ciasta",
+    "extendedDescription": "Tradycyjne ciasto piernikowe przełożone domowymi powidłami śliwkowymi z nutą korzenną. Ciasto długo utrzymuje naturalną wilgoć. Oblane deserową czekoladą i udekorowane bakaliami w karmelu.",
+    "updatedAt": "20.12.2019",
+    "location": [52.23178, 21.061039]
+  },
+  {
+    "id": 5,
+    "imageUrl": "https://images.unsplash.com/photo-1489069313310-63735a4f3010?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+    "title": "Ciastka pistacjowe",
+    "description": "Połączenie porzeczek i pulchnego ciasta",
+    "extendedDescription": "Delikatnie, czekoladowe ciasto piaskowe połączone z ciastem o wyrazistym smaku pomarańczy. Smakowitym dopełnieniem jest lekka polewa karmelowa z wiórkami białej czekolady.",
+    "updatedAt": "12.12.2019",
+    "location": [52.212343, 21.067234]
+  },
+  {
+    "id": 6,
+    "imageUrl": "https://images.unsplash.com/photo-1550587850-e025c82d8b6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+    "title": "Ciastka marchewkowe",
+    "description": "Połączenie porzeczek i pulchnego ciasta",
+    "extendedDescription": "Ciasto czekoladowe z dodatkiem powideł śliwkowych oraz marcepanem w dwóch smakach pomarańczowym i pistacjowym, oblane czekoladą.",
+    "updatedAt": "1.12.2019",
+    "location": [52.162805, 21.027335]
+  }
+]

@@ -30,26 +30,32 @@ router.post("/register", async (req, res) => {
   }
 });
 
-router.post("/login", (req, res) => {
-  // Mock user
-  const user = {
-    id: 1,
-    username: "brad",
-    email: "brad@gmail.com"
-  };
+router.post("/login", async (req, res) => {
+  const { username, password } = req.body;
 
-  jwt.sign(
-    { user },
-    process.env.JWT_SECRET,
-    {
-      expiresIn: "7d"
-    },
-    (err, token) => {
-      res.json({
-        token
-      });
+  if (!username || !password) {
+    res.sendStatus(401);
+  } else {
+    const user = await UserModel.findOne({ username });
+    const isAuthenticated = bcrypt.compareSync(password, user.password);
+
+    if (!isAuthenticated) {
+      res.sendStatus(409);
+    } else {
+      jwt.sign(
+        { username },
+        process.env.JWT_SECRET,
+        {
+          expiresIn: "7d"
+        },
+        (err, token) => {
+          res.json({
+            token
+          });
+        }
+      );
     }
-  );
+  }
 });
 
 module.exports = app => app.use("/api", router);

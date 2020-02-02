@@ -19,4 +19,22 @@ router.get("/", verifyToken, async (req, res) => {
   });
 });
 
+router.post("/", verifyToken, (req, res) => {
+  jwt.verify(req.token, process.env.JWT_SECRET, async (error, authData) => {
+    if (error) {
+      res.sendStatus(403);
+    } else {
+      const { imageUrl, title, description, extendedDescription } = req.body;
+      const newOffer = await new OfferModel({
+        imageUrl,
+        title,
+        description,
+        extendedDescription
+      }).save();
+
+      res.json(newOffer);
+    }
+  });
+});
+
 module.exports = app => app.use("/api/offers", router);

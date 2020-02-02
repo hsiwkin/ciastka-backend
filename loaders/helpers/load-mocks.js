@@ -7,7 +7,7 @@ module.exports = async () => {
   for (const offer of offersRawData) {
     const offerModel = new OfferModel({
       imageUrl: offer.imageUrl,
-      imageUrl: offer.title,
+      title: offer.title,
       description: offer.description,
       extendedDescription: offer.extendedDescription,
       xloc: offer.location[0],

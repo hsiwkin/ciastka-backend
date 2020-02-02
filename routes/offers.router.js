@@ -3,6 +3,7 @@ const router = express.Router();
 const offersMock = require("../mocks/offers.json");
 const OfferModel = require("../models/offer.model");
 const jwt = require("jsonwebtoken");
+const verifyToken = require("./helpers/jwt-helper");
 
 router.get("/", verifyToken, async (req, res) => {
   jwt.verify(req.token, process.env.JWT_SECRET, async (error, authData) => {
@@ -17,22 +18,5 @@ router.get("/", verifyToken, async (req, res) => {
     }
   });
 });
-
-// Format of token
-// Authorization: Bearer <access_token>
-
-// Verify Token - middleware function
-function verifyToken(req, res, next) {
-  // Get auth header value
-  const bearerHeader = req.headers["authorization"];
-
-  if (typeof bearerHeader !== "undefined") {
-    const bearerToken = bearerHeader.split(" ")[1];
-    req.token = bearerToken;
-    next();
-  } else {
-    res.sendStatus(403);
-  }
-}
 
 module.exports = app => app.use("/api/offers", router);
